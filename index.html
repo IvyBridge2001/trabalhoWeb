@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Xamã</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Joji</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/main.css">
+	<!--link rel="stylesheet" href="styles/original.css"-->
+	<script src="media/music.js"> </script>
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li><button><a href="#">Home</a></button></li>
-                <li><button><a href="#">About</a></button></li>
-                <li><button><a href="#">Contact</a></button></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="body">
-        <div class="img">
-            <img src="" alt="" >
-        </div>
-        <div class="tracks">
-            <ul>Tracks:
-                <li>
-
-                </li>
-            </ul>
-        </div>
-    </div>
-    <table>
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-    </table>
-    <footer id="footer">
-        <form class="form" action="">
-            <label for="">Email: 
-                <input type="text">
-            </label>
-            <label for="">Mensagem:
-                <input type="textarea">
-            </label>
-            <button>Enviar</button>
-        </form>
-        <div class="video">
-            <video src="" controls></video>
-            <a href=""></a>
-            <a href=""></a>
-        </div>
-    </footer>
+	<audio id="m1" src="media/sditd.mp3" preload="auto"></audio>
+	<audio id="m2" src="media/yr.mp3" preload="auto"></audio>
+	<audio id="m3" src="media/wh.mp3" preload="auto"></audio>
+	<audio id="m4" src="media/demons.mp3" preload="auto"></audio>
+	<header></header>
+	<nav>
+		<ul>
+			<li><input class="button" type="button" value="Home"></li>
+			<li><input class="button" type="button" value="About"></li>
+			<li><input class="button" type="button" value="Contact"></li>
+		</ul>
+	</nav>
+	<div class="tracks">
+		<div class="cover"></div>
+		<ul>
+			<li>
+				<a onclick="start('m1'); document.getElementById('m1').volume=0.1">▶</a>
+				<li>
+					<p><b>SLOW DANCING IN THE DARK</b></p>
+					<p>joji</p>
+				</li>
+			</li>
+			<li>
+				<a onclick="start('m2'); document.getElementById('m2').volume=0.1">▶</a>
+				<li>
+					<p><b>YEAH RIGHT</b></p>
+					<p>joji</p>
+				</li>
+			</li>
+			<li>
+					<a onclick="start('m3'); document.getElementById('m3').volume=0.1">▶</a>
+				<li>
+					<p><b>Will He</b></p>
+					<p>joji</p>
+				</li>
+			</li>
+			<li>
+				<a onclick="start('m4'); document.getElementById('m4').volume=0.1">▶</a>
+				<li>
+					<p><b>Demons</b></p>
+					<p>joji</p>
+				</li>
+			</li>
+		</ul>
+		<table>
+			<tr>
+				<marquee><b>Most played musics of Joji in spotify.</b></marquee>
+			</tr>
+		</table>
+	</div>
+	<div class="form">
+		<h2>CONTACT</h2>
+		<form action="">
+			<label for="e-mail">E-mail: 
+				<input type="email" placeholder="E-mail">
+			</label><br/>
+			<label for="message">Message:
+				<textarea type="textarea" placeholder="Message" rows="5"></textarea>
+			</label><br/>
+			<input class="btn" type="button" value="Enviar">
+		</form>
+	</div>
+	<footer>
+		<P>@copyright: Joji</P>
+	</footer>
 </body>
 </html>

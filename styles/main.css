@@ -1,0 +1,68 @@
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+/*
+header
+*/
+#header{
+    border: solid 2px;
+    height:10%;
+    background-image:linear-gradient(-75deg,black,darkmagenta,red,black,darkmagenta);
+}
+
+#header>nav>ul{
+    display:flex;
+    flex-flow:row nowrap;
+    margin-left:-30px;
+    margin-top:25px;
+}
+
+#header>nav>ul>li{
+    list-style-type:none;
+}
+
+#header>nav>ul>li>button>a{
+    text-decoration:none;
+    color:white;
+}
+
+#header>nav>ul>li>button{   
+    margin:4px;
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+}
+
+#body {
+    display:flex;
+    flex-flow:row wrap;
+    height:80%;
+}
+
+#footer{
+    display:flex;
+    height:10%;
+}
+
+#body>.img {
+
+}
+
+#body>.tracks {
+    list-style:none;
+}
+
+#body>table{
+
+}
+
+#footer>.form {
+
+}
+
+#footer>.video {
+
+}
